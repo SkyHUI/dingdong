@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">叮咚</string>
+    <string name="app_author">\@ 曾朋辉</string>
+    <string name="refreshing">搜索设备中...</string>
+    <string name="search_title">HKG设备选择</string>
+    <string name="collect_title">脉搏波采集</string>
+    <string name="history_title">历史记录</string>
+    <string name="chart_title">脉搏波形图</string>
+    <string name="index">首页</string>
+    <string name="collection">我的收藏</string>
+    <string name="week">我的健康周</string>
+    <string name="count">我的统计</string>
+    <string name="logout">退出登录</string>
+    <string name="setting">设置</string>
+    <string name="about">关于</string>
+    <string name="chart_dbp">舒张压:</string>
+    <string name="chart_sbp">收缩压:</string>
+    <string name="match_model">匹配</string>
+    <string name="proofread">校对</string>
+    <string name="feed_hint">请输入您的意见或建议</string>
+    <string name="feed_back">"问题与反馈"</string>
+    <string name="username_digits">abcdefghijklmnopqrstuvwxyz0123456789_@.</string>
+    <string name="password_digits">abcdefghijklmnopqrstuvwxyz0123456789~!@#$%^*()_+-=[]\{};:",./?</string>
+</resources>

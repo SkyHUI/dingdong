@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item1"
+            android:icon="@mipmap/icon_0"
+            android:title="@string/index"/>,
+        <item
+            android:id="@+id/item2"
+            android:icon="@mipmap/icon_2"
+            android:title="@string/collection"/>
+
+        <item
+            android:id="@+id/item3"
+            android:icon="@mipmap/icon_1"
+            android:title="@string/week"/>
+
+        <item
+            android:id="@+id/item4"
+            android:icon="@mipmap/statistics"
+            android:title="@string/count"/>
+
+        <item
+            android:id="@+id/item5"
+            android:icon="@mipmap/logout"
+            android:title="@string/logout"/>
+    </group>
+
+    <item android:title="系统">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/setting"
+                    android:icon="@mipmap/setting"
+                    android:title="@string/setting"/>
+                <item
+                    android:id="@+id/about"
+                    android:icon="@mipmap/about"
+                    android:title="@string/about"/>
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

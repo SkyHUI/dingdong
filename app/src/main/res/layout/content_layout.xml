@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        android:elevation="5dp"
+        android:navigationIcon="@mipmap/home"
+        android:title="@string/appbar_scrolling_view_behavior"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/main_frame"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <org.loader.mdtab.MDTab
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mdtab"
+                android:layout_gravity="bottom"
+                android:textSize="12sp"
+                app:checked_color="@color/white"
+                app:checked_percent="130%"
+                app:layout_behavior="@string/tab_behavior"
+                app:normal_color="@color/black"
+                app:ripple_color="#22448aca"
+                android:background="@color/colorPrimaryDark"
+                app:tab_padding="5dp"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingbt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_anchor="@id/mdtab"
+                app:layout_anchorGravity="bottom|end"
+                android:layout_marginBottom="50dp"
+                android:src="@mipmap/bored"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingbt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_anchor="@id/mdtab"
+                app:layout_anchorGravity="bottom|end"
+                android:layout_marginBottom="50dp"
+                android:src="@mipmap/love"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_anchor="@id/mdtab"
+                app:layout_anchorGravity="bottom|end"
+                android:layout_marginBottom="50dp"
+                android:src="@mipmap/happy"/>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

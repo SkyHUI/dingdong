@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".LeafChartActivity"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/chart_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimaryDark"
+            android:elevation="5dp"
+            android:title="@string/chart_title"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+        <com.beiing.leafchart.LeafLineChart
+            android:id="@+id/leaf_chart"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginLeft="@dimen/vertical_margin"/>
+
+        <TextView
+            android:id="@+id/chart_tv_dbp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding"
+            android:text="@string/chart_dbp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:gravity="center"
+            android:textSize="@dimen/text_large"/>
+
+        <TextView
+            android:id="@+id/chart_tv_sbp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding"
+            android:textColor="@color/colorAccent"
+            android:text="@string/chart_sbp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/text_large"/>
+
+    </LinearLayout>
+
+</LinearLayout>

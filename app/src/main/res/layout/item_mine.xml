@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/horizontal_margin">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/item_mine_img"
+        android:layout_gravity="center_vertical"
+        android:background="@mipmap/happy"
+        android:layout_marginLeft="@dimen/horizontal_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_mine_tv"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/text_normal"
+        android:text="设置"
+        android:layout_marginLeft="@dimen/horizontal_margin"/>
+
+</LinearLayout>

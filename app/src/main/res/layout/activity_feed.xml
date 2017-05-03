@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/feed_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        android:elevation="5dp"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray"
+        android:padding="@dimen/vertical_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/vertical_margin"
+            android:background="@mipmap/feedback_bg" >
+
+            <ImageView
+                android:id="@+id/img_01"
+                android:layout_width="match_parent"
+                android:layout_height="70dip"
+                android:layout_margin="5dip"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitStart"
+                android:src="@mipmap/feedtxt" />
+
+            <EditText
+                android:id="@+id/feed_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_01"
+                android:hint="@string/feed_hint"
+                android:layout_marginEnd="5dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginStart="5dip"
+                android:padding="@dimen/view_padding"
+                android:textSize="@dimen/text_normal"
+                android:lineSpacingExtra="8dp"
+                android:background="@drawable/touming"
+                android:gravity="top" />
+
+            <Button
+                android:id="@+id/feed_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="21dip"
+                android:layout_marginEnd="55dip"
+                android:layout_marginLeft="55dip"
+                android:layout_marginRight="55dip"
+                android:layout_marginStart="55dip"
+                android:layout_marginTop="24dip"
+                android:text="To:Dear 叮咚"
+                android:textStyle="italic"
+                android:textSize="@dimen/text_normal"
+                android:background="@color/gray" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
